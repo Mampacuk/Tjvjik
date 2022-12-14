@@ -10,7 +10,7 @@ define([
 
 	var settings = {
 
-		"gameTitle" : "Tzhvzhik Interactive",	//title of game (used for title screen in themes)
+		"gameTitle" : "Tzhvzhik: An Interactive Game",	//title of game (used for title screen in themes)
 		"releaseMode" : false,				//if true, will end a scene early if a path bug is found. If false, will display NoPathFound error on console and crash.
 		"recordPlaythroughs" : true,
 		"consoleLogs" : [],					//which logs are displayed. Can be StoryAssembler or All...in an array so in the future we can be additive

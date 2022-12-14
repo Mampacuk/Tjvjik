@@ -1,142 +1,435 @@
 [
-	{
-		"id": "beginningFragment",
-		"avatar": "protagonist",
-		"content": "Many years ago there lived in Erzurum a certain poor old man named Brother Nerses.",
-		"choices":
-		[
-			{"gotoId": "intro1"}
-		],
-		"conditions": []
+{
+	"id": "beginningFragment",
+	"avatar": "protagonist",
+	"content": "Many years ago there lived in Erzurum a certain poor old man named Brother Nerses.",
+	"choices":
+	[
+		{"gotoId": "intro1"}
+	],
+	"conditions": []
+},
+
+{
+	"id": "intro1",
+	"choiceLabel": "Next",
+	"avatar": "protagonist",
+	"content": "Brother Nerses had once been a very rich man. He was the scion of a distinguished family greatly honored by governors and ministers. But he suffered great misfortunes and completely failed in life.",
+	"choices":
+	[
+		{"gotoId": "intro2"}
+	],
+	"conditions": []
+},
+
+{
+	"id": "intro2",
+	"choiceLabel": "Next",
+	"avatar": "protagonist",
+	"content": "Brother Nerses was so bewildered, so disappointed and so discouraged that life at last meant absolutely nothing to him, and he led a drab life, loathing all his neighbors.",
+	"choices":
+	[
+		{"gotoId": "intro3"}
+	],
+	"conditions": []
+},
+
+{
+	"id": "intro3",
+	"choiceLabel": "Next",
+	"avatar": "protagonist",
+	"content": "Although his house was dilapidated and in ruins, the signs of past glory could be seen on its exterior: even his old and shabby clothes showed that they were once first-rate. He had grown old and wrinkled and a bit hunchbacked but he still preserved his magnanimity. He was definitely poor and destitute, needing the help of neighbors and friends, yet he never stooped to beg or live on the pity of other people.",
+	"choices":
+	[
+		{"gotoId": "intro4"}
+	],
+	"conditions": []
+},
+
+{
+	"id": "intro4",
+	"choiceLabel": "Next",
+	"avatar": "protagonist",
+	"content": "Once, Brother Nerses visited the market, and as he was passing the butcher's, Nikoghos Agha, one of the rich townsmen, bought a sheep's lung, liver, and heart.",
+	"choices":
+	[
+		{"gotoId": "intro5"}
+	],
+	"conditions": []
+},
+
+{
+	"id": "intro5",
+	"choiceLabel": "Next",
+	"avatar": "protagonist",
+	"content": "Having lived in Constantinople for a number of years, Nikoghos Agha talked fluent Greek, and for this reason and in order to distinguish him from other Nikoghoses in the city, people called him Nikoghos the Greek.",
+	"choices":
+	[
+		{"gotoId": "choice1"}
+	],
+	"conditions": []
+},
+
+{
+	"id": "choice1",
+	"choiceLabel": "Next",
+	"avatar": "protagonist",
+	"content": "\"Take this lung home, Brother Nerses, it's for you!\" Nikoghos Agha said, and reached out his hand with a sheep’s lung in it, for Brother Nerses to take.",
+	"choices":
+	[
+		{"gotoId": "choice1.a"},
+		{"gotoId": "choice1.b"}
+	],
+	"conditions": []
+},
+
+{
+	"id": "choice1.a",
+	"choiceLabel": "Accept the lung",
+	"avatar": "protagonist",
+	"content": "\"Thank you,\" Brother Nerses answered and, taking the lung from his hand.",
+	"choices":
+	[
+		{"gotoId": "aftermath1"}
+	],
+	"conditions": []
+},
+
+{
+	"id": "choice1.b",
+	"choiceLabel": "Reject the lung",
+	"avatar": "protagonist",
+	"content": "\"I appreciate your efforts, Nikoghos Agha,” Brother Nerses replied, “but I should not take this meat from you.\"",
+	"choices":
+	[
+		{"gotoId": "choice1.b.aftermath"}
+	],
+	"conditions": []
+},	
+
+{
+	"id": "choice1.b.aftermath",
+	"choiceLabel": "Next",
+	"avatar": "protagonist",
+	"content": "\"Why is that, Brother Nerses?\" Nikoghos Agha exclaimed. \"Can’t a well-intentioned man give a helping hand to his brother in need?\"",
+	"choices":
+	[
+		{"gotoId": "choice1.b.choice2.a"},
+		{"gotoId": "choice1.b.choice2.b"}
+	],
+	"conditions": []
+},
+
+{
+	"id": "choice1.b.choice2.a",
+	"choiceLabel": "\"I don't want to owe you.\"",
+	"avatar": "protagonist",
+	"content": "\"I don’t really want to be indebted to you,\" Brother Nerses said. \"You know I’m barely making ends meet right now,\" he added.",
+	"choices":
+	[
+		{"gotoId": "choice1.b.choice2.a.aftermath"}
+	],
+	"conditions": []
+},
+
+{
+	"id": "choice1.b.choice2.b",
+	"choiceLabel": "\"I don't need it, give it to someone else.\"",
+	"avatar": "protagonist",
+	"content": "\"You see, my man,\" Brother Nerses answered, \"I already got enough meat from our neighbors for dinner. So you’d better give this to someone who needs it more.\" Just as Nikoghos Agha was about to open his mouth to scoff, Brother Nerses walked away in a hustle to escape his pretentious flattery.",
+	"choices":
+	[
+		{"gotoId": "endingFragment"}
+	],
+	"conditions": []
+},
+
+{
+	"id": "choice1.b.choice2.a.aftermath",
+	"choiceLabel": "Next",
+	"avatar": "protagonist",
+	"content": "\"What are you talking about, dear brother,\" Nikoghos Agha said. \"My present comes from the bottom of my heart,\" he continued, \"and you won’t be no debtor to me. Have it.\" Nikoghos Agha shoved the lung into Nerses’ hands, and he had no choice other than to take it.",
+	"choices":
+	[
+		{"gotoId": "aftermath1"}
+	],
+	"conditions": []
+},
+
+{
+	"id": "aftermath1",
+	"choiceLabel": "Next",
+	"avatar": "protagonist",
+	"content": "Shortly after, Nerses walked homeward with Nikoghos Agha.",
+	"choices":
+	[
+	{"gotoId": "middle1"}
+	],
+	"conditions": []
 	},
 	
 	{
-		"id": "intro1",
+	"id": "middle1",
+	"choiceLabel": "Next",
+	"avatar": "protagonist",
+	"content": "Nikoghos Agha had bought a whole sheep, and his servant was following him with the sheep across his shoulders. Although in the distinguished company of Nikoghos Agha, Brother Nerses modestly tried to remain one step to the rear as a sign of honoring him.",
+	"choices":
+	[
+	{"gotoId": "middle2"}
+	],
+	"conditions": []
+	},
+
+
+	{
+		"id": "middle2",
 		"choiceLabel": "Next",
 		"avatar": "protagonist",
-		"content": "Brother Nerses had once been a very rich man. He was the scion of a distinguished family greatly honored by governors and ministers. But he suffered great misfortunes and completely failed in life.",
+		"content": "On their way, Nikoghos Agha was telling about all the intricacies of preparing a dish called tzhvzhik. He didn’t spare the details and delved deeply into providing the most elaborate instructions for Nerses’ wife to follow to preserve all the succulence of his bestowed delicacy.",
 		"choices":
 		[
-			{"gotoId": "intro2"}
+		{"gotoId": "middle3"}
 		],
 		"conditions": []
 	},
 
 	{
-		"id": "intro2",
+		"id": "middle3",
 		"choiceLabel": "Next",
 		"avatar": "protagonist",
-		"content": "Brother Nerses was so bewildered, so disappointed and so discouraged that life at last meant absolutely nothing to him, and he led a drab life, loathing all his neighbors.",
+		"content": "He explained how special the meat he got for Nerses is, and started a whole prep talk on how to save money here and there, even during the cooking process. He talked, talked, and talked, and there seemed to be no end to his blabbering.",
 		"choices":
 		[
-			{"gotoId": "intro3"}
+		{"gotoId": "middle4"}
 		],
 		"conditions": []
 	},
 
 	{
-		"id": "intro3",
+		"id": "middle4",
 		"choiceLabel": "Next",
 		"avatar": "protagonist",
-		"content": "Although his house was dilapidated and in ruins, the signs of past glory could be seen on its exterior: even his old and shabby clothes showed that they were once first-rate. He had grown old and wrinkled and a bit hunchbacked but he still preserved his magnanimity. He was definitely poor and destitute, needing the help of neighbors and friends, yet he never stooped to beg or live on the pity of other people.",
+		"content": "Brother Nerses followed his benefactor silently. When Nikoghos Agha asked him questions and looked askance at him, he bent his head as a sign of sheepish agreement. Nikoghos Agha expected him to be grateful and thank him with humbleness; he expected him to express his gratitude in clear and distinct words, yet Brother Nerses couldn't so much as utter a syllable, he was so ashamed.",
 		"choices":
 		[
-			{"gotoId": "intro4"}
+		{"gotoId": "choice3"}
 		],
 		"conditions": []
 	},
 
 	{
-		"id": "intro4",
+		"id": "choice3",
 		"choiceLabel": "Next",
 		"avatar": "protagonist",
-		"content": "Once, Brother Nerses visited the market, and as he was passing the butcher's, Nikoghos Agha, one of the rich townsmen, bought a sheep's lung, liver, and heart.",
+		"content": "To the very door of his house God knows how Nikoghos preached him to be a good economizer; to be content with little, to acknowledge the benevolence of other people and not to be grateful to anybody at all. Moreover, he was insisting on Nerses sending his family members to do chores for him. They finally parted, and Nikoghos Agha started walking away.",
 		"choices":
 		[
-			{"gotoId": "intro5"}
+		{"gotoId": "choice3.a"},
+		{"gotoId": "choice3.b"}
 		],
 		"conditions": []
 	},
 
 	{
-		"id": "intro5",
+		"id": "choice3.a",
+		"choiceLabel": "\"Enough of this foolishness!\"",
+		"avatar": "protagonist",
+		"content": "On the porch of his house, Brother Nerses exploded: \"I wish I had never met you today; a curse on you and your nasty lung; it would be better for my family to starve than receive your dirty lung!\"\nHe entered the home, and jammed the door out of anger.",
+		"choices":
+		[
+		{"gotoId": "choice3.a.aftermath1"}
+		],
+		"conditions": []
+	},
+
+	{
+		"id": "choice3.a.aftermath1",
 		"choiceLabel": "Next",
 		"avatar": "protagonist",
-		"content": "Having lived in Constantinople for a number of years, Nikoghos Agha talked fluent Greek, and for this reason and in order to distinguish him from other Nikoghoses in the city, people called him Nikoghos the Greek.",
+		"content": "Little did Brother Nerses know that Nikoghos Agha was not that far enough from him yet, and that he managed to hear Nerses' hot-headed exclamations. Of course, he took that close to his heart. Pretty soon, in a matter of a couple of days, the townsmen found out what happened between them.",
 		"choices":
 		[
-			{"gotoId": "choice1"}
+		{"gotoId": "choice3.a.aftermath2"}
 		],
 		"conditions": []
 	},
 
 	{
-		"id": "choice1",
+		"id": "choice3.a.aftermath2",
 		"choiceLabel": "Next",
 		"avatar": "protagonist",
-		"content": "\"Take this lung home, Brother Nerses, it's for you!\" Nikoghos Agha said, and reached out his hand with a sheep’s lung in it, for Brother Nerses to take.",
+		"content": "In the light of the new gossips spread around the town, everyone had remembered everything seemingly bad about Brother Nerses. \"How ungrateful can he be?\", people wondered. \"Poor Nikoghos Agha bought him food, he takes it, and then curses him behind his back!\" The uneasiness in the community was raised every single day by Nikoghos Agha's constant cries of injustice, to the point the townsmen banished Brother Nerses from the town for all the sins he had and had not committed.",
 		"choices":
 		[
-			{"gotoId": "choice1.a"},
-			{"gotoId": "choice1.b"}
+		{"gotoId": "endingFragment"}
 		],
 		"conditions": []
 	},
 
 	{
-		"id": "choice1.a",
-		"choiceLabel": "Accept the lung",
+		"id": "choice3.b",
+		"choiceLabel": "Say goodbye and enter the house.",
 		"avatar": "protagonist",
-		"content": "\"Thank you,\" Brother Nerses answered and, taking the lung from his hand.",
+		"content": "Brother Nerses angrily entered the house, slowly undressed, and spoke in his mind: \"I wish I had never met you today; a curse on you and your nasty lung; it would be better for my family to starve than receive your dirty lung!\"",
 		"choices":
 		[
-			{"gotoId": "aftermath1"}
+		{"gotoId": "aftermath2"}
 		],
 		"conditions": []
 	},
 
 	{
-		"id": "choice1.b",
-		"choiceLabel": "Reject the lung",
-		"avatar": "protagonist",
-		"content": "\"I appreciate your efforts, Nikoghos Agha,” Brother Nerses replied, “but I should not take this meat from you.\"",
-		"choices":
-		[
-			{"gotoId": "choice1.b.aftermath"}
-		],
-		"conditions": []
-	},	
-
-	{
-		"id": "choice1.b.aftermath",
+		"id": "aftermath2",
 		"choiceLabel": "Next",
 		"avatar": "protagonist",
-		"content": "\"Why is that, Brother Nerses?\" Nikoghos Agha exclaimed. \"Can’t a well-intentioned man give a helping hand to his brother in need?\"",
+		"content": "In the house, Brother Nerses had the ship's long. His wife made some soup, and his big family had a dinner.",
 		"choices":
 		[
-			{"gotoId": "choice1.b.choice2.a"},
-			{"gotoId": "choice1.b.choice2.b"}
+		{"gotoId": "outro1"}
 		],
 		"conditions": []
 	},
 
 	{
-		"id": "choice1.b.choice2.a",
-		"choiceLabel": "\"I don't want to owe you.\"",
+		"id": "outro1",
+		"choiceLabel": "Next",
 		"avatar": "protagonist",
-		"content": "\"I don’t really want to be indebted to you,\" Brother Nerses said. \"You know I’m barely making ends meet right now,\" he added.",
+		"content": "Toward evening Brother Nerses went to church in slow steps to pray to his Maker, to ask for His help and pity.",
 		"choices":
 		[
-			{"gotoId": "choice1.b.choice2.a.aftermath"}
+		{"gotoId": "outro2"}
 		],
 		"conditions": []
 	},
 
 	{
-		"id": "choice1.b.choice2.b",
-		"choiceLabel": "\"I don't need it, give it to someone else.\"",
+		"id": "outro2",
+		"choiceLabel": "Next",
 		"avatar": "protagonist",
-		"content": "\"You see, my man,\" Brother Nerses answered, \"I already got enough meat from our neighbors for dinner. So you’d better give this to someone who needs it more.\" Just as Nikoghos Agha was about to open his mouth to scoff, Brother Nerses walked away in a hustle to escape his pretentious flattery.",
+		"content": "On his way he met Nikoghos Agha, who said: \"Good evening, Brother Nerses, how is your health? I notice you walk like a vigorous young man. You seem to have received a young man's strength; how was the sheep's lung? Was it tasty? Did my sister; I mean your wife, scrape it well?\"",
+		"choices":
+		[
+		{"gotoId": "outro3"}
+		],
+		"conditions": []
+	},
+
+	{
+		"id": "outro3",
+		"choiceLabel": "Next",
+		"avatar": "protagonist",
+		"content": "Brother Nerses answered: \"Very well indeed, my lord, I thank you very much; we all thank you for it very much,\" answered Brother Nerses in haste, so that Nikoghos Agha would give up talking about the lung and discuss something else. He was terribly afraid that those in the churchyard might hear and that he would be insulted and wounded in his pride.",
+		"choices":
+		[
+		{"gotoId": "outro4"}
+		],
+		"conditions": []
+	},
+
+
+	{
+		"id": "outro4",
+		"choiceLabel": "Next",
+		"avatar": "protagonist",
+		"content": "\"It seems you have eaten it with a good appetite; you definitely seem fresher, even the color of your face has changed to a crimson red. Were the salt and pepper added in good proportion?\" asked Nikoghos, without considering that his voice might be heard by the bystanders. Brother Nerses, shrinking into himself, wished the ground to open and swallow him alive and bury him forever.",
+		"choices":
+		[
+		{"gotoId": "outro5"}
+		],
+		"conditions": []
+	},
+
+	{
+		"id": "outro5",
+		"choiceLabel": "Next",
+		"avatar": "protagonist",
+		"content": "\"Eyerything, everything was right,\" he stammered, wishing to put an end to the conversation. But Nikoghos desired at all costs to let all the church people know that he had given him, as alms, a lung which had cost him one fourth of a piastre.",
+		"choices":
+		[
+		{"gotoId": "outro6"}
+		],
+		"conditions": []
+	},
+
+	{
+		"id": "outro6",
+		"choiceLabel": "Next",
+		"avatar": "protagonist",
+		"content": "Brother Nerses could not put it in words how humiliating and maddening their encounter was. But clearly, it was only the beginning. On the next morning Brother Nerses went to the market, desiring to sip a cup of coffee.",
+		"choices":
+		[
+		{"gotoId": "outro8"}
+		],
+		"conditions": []
+	},
+
+	{
+		"id": "outro8",
+		"choiceLabel": "Next",
+		"avatar": "protagonist",
+		"content": "He had hardly begun to sip his coffee when Nikoghos Agha entered and, saluting him silently, sat facing him. Brother Nerses felt his coffee turn to poison. He felt he would be sure to talk about benevolence in public. And in fact he was not mistaken. However, this time, when Nikoghos Agha started his broken record yet again, one of the loafers in the coffehouse casually joined the conversation, and Nikoghos Agha savored all the great opportunity to retell the stranger how much good he had done for Brother Nerses.",
+		"choices":
+		[
+		{"gotoId": "outro9"}
+		],
+		"conditions": []
+	},
+
+	{
+		"id": "outro9",
+		"choiceLabel": "Next",
+		"avatar": "protagonist",
+		"content": "The conversation ended bitterly, with Nerses talking back to Nikoghos Agha about his cherished meal, and eventually Brother Nerses left the coffehouse in order to spare his nerves.",
+		"choices":
+		[
+		{"gotoId": "outro10"}
+		],
+		"conditions": []
+	},
+
+	{
+		"id": "outro10",
+		"choiceLabel": "Next",
+		"avatar": "protagonist",
+		"content": "It was a great pleasure for Nikoghos Aghato hear the story of his famous lung told everywhere! Whenever and wherever he met Brother Nerses, his question would turn upon the subject of the sheep's lung. And all the city came to know about it. Nikoghos Agha talked everywhere. A week, a month, three months, six months and at last a whole year passed, and yet Nikoghos Agha would remind him of the lung wherever he met him, whether he was in the street or in the churchyard, in the coffeehouse or in the bath, at meetings or at wedding feasts. So much so that the lung bought for him by Nikoghos Agha became an intolerable curse.",
+		"choices":
+		[
+		{"gotoId": "choice4"}
+		],
+		"conditions": []
+	},
+
+	{
+		"id": "choice4",
+		"choiceLabel": "Next",
+		"avatar": "protagonist",
+		"content": "Thusly, one day, getting desperately out of temper and patience, Brother Nerses decided how to deal with Nikoghos Agha's bane.",
+		"choices":
+		[
+		{"gotoId": "choice4.a"}, 
+		{"gotoId": "choice4.b"},
+		{"gotoId": "choice4.c"}
+		],
+		"conditions": []
+	},
+
+	{
+		"id": "choice4.b",
+		"choiceLabel": "Buy a lung for Nikoghos Agha, to return him the favor.",
+		"avatar": "protagonist",
+		"content": "Brother Nerses waited before the butcher's door with determination. He had hidden something under his coat. It happened that Nikoghos Agha came along with his servant to buy meat and, noticing Brother Nerses, he said as usual, \"How are you, Brother Nerses, I hope you are quite well. Do you remember that greasy lung?\"",
+		"choices":
+		[
+			{"gotoId": "choice4.b.aftermath"}
+		],
+		"conditions": []
+	},
+
+	{
+		"id": "choice4.b.aftermath",
+		"choiceLabel": "Next",
+		"avatar": "protagonist",
+		"content": "\"Take your nasty lung back and hold your tongue from now on!\" roared Brother Nerses, and, taking out the voluminous sheep's lung hidden under his coat, he struck Nikoghos in the face with such unheard-of fury that the man was absolutely dumb-founded by the blow. He was struck mute and utterly, absolutely unable to move, and he was a laughingstock to all the passersby, with his face, his turban and his neck covered with blood.",
 		"choices":
 		[
 			{"gotoId": "endingFragment"}
@@ -145,22 +438,34 @@
 	},
 
 	{
-		"id": "choice1.b.choice2.a.aftermath",
-		"choiceLabel": "Next",
+		"id": "choice4.a",
+		"choiceLabel": "Take a thought about how Nikoghos Agha acquired his riches.",
 		"avatar": "protagonist",
-		"content": "\"What are you talking about, dear brother,\" Nikoghos Agha said. \"My present comes from the bottom of my heart,\" he continued, \"and you won’t be no debtor to me. Have it.\" Nikoghos Agha shoved the lung into Nerses’ hands, and he had no choice other than to take it.",
+		"content": "\"If he wants to be the center of attention so much,\" Brother Nerses pondered, \"why don't I give him the taste of his own medicine?\"\nBrother Nerses quickly realized that no one in the town knew how Nikoghos Agha obtained his wealth. That's why every next time Brother Nerses appeared on public, he shared with people his own theories on that.",
 		"choices":
 		[
-			{"gotoId": "aftermath1"}
+			{"gotoId": "choice4.a.aftermath"}
 		],
 		"conditions": []
 	},
 
 	{
-		"id": "aftermath1",
+		"id": "choice4.a.aftermath",
 		"choiceLabel": "Next",
 		"avatar": "protagonist",
-		"content": "Shortly after, Nerses walked homeward with Nikoghos Agha.",
+		"content": "Soon, the town was crawling with rumors about Nikoghos Agha's fortunes. \"He was a scalper,\" some persons said. \"No, he was a black marketeer,\" the others replied. Other gossips about Nikoghos Agha resurfaced, and Brother Nerses' story got forgotten, and he could live his life unbothered again.",
+		"choices":
+		[
+			{"gotoId": "endingFragment"}
+		],
+		"conditions": []
+	},
+
+	{
+		"id": "choice4.c",
+		"choiceLabel": "Accept the fact Nikoghos Agha is not going to stop.",
+		"avatar": "protagonist",
+		"content": "Brother Nerses decided to play along with his sworn enemy, rid himself of any emotion, and soon Nikoghos Agha lost all of his excitement. Moreover, his stunt turned out to be a short-lived trend, and the villagers got annoyed by his broken record as well. As a result, Brother Nerses was left in peace, and tzhvzhik became just a distant memory he buried very-very deep.",
 		"choices":
 		[
 			{"gotoId": "endingFragment"}
@@ -172,23 +477,21 @@
 		"id": "endingFragment",
 		"avatar": "protagonist",
 		"choiceLabel" : "Continue",
-		"content": "This is the end of the story. You have chosen options that lead to a logical ending of the narrative.",
-		"choices":
-		[
-		  {"gotoId": "dummyEnding"}
+		"content": "This is the end of the story. You have chosen options that led to a logical ending of the narrative.",
+		"choices": [
+		{"gotoId": "dummyEnding"}
 		],
-		"conditions": [],
-		"effects":
-		[
-		  "set finishExampleScene true"
+		"conditions": [
+		],
+		"effects" : [
+		"set finishExampleScene true"
 		]
 	},
-
 	{
 		"id": "dummyEnding",
 		"avatar": "protagonist",
-		"choiceLabel" : "[That's the end]",
-		"content": "",
+		"choiceLabel" : "That's the end",
+		"content": "Click to Restart",
 		"conditions": []
 	}
 ]
